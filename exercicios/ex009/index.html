@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="../favicons/favicon10.ico" type="image/x-icon">
+     <title>Trabalhano com Links</title>
+</head>
+
+<body>
+     <h1>Aprendendo a usar links! ;3 </h1>
+
+     <p>Use a tag &lt;a&gt; para colocar links externos e internos em uma pagina</p>
+
+     <hr>
+
+     <!-- Para links externos voce deve referenciar o link da pagina desejada com 
+         seu url completo -->
+     <h2>Usando Links Externos!</h2>
+     <!-- O parametro target e o parametro rel servem para que quando voce clique no
+         link externo ele não sobreponha a pagina atual -->
+     <p>Voce pode acessar o meu <a href="https://github.com/barbstefani" target="_blank" rel="Externos">
+               repositorio publico no github</a></p>
+
+     <!-- Nesse segundo exemplo, a pagina do link sobrepoem a atual pois
+            o parametro target _blank nao esta sendo usado -->
+     <p>Voce tambem pode <a href="https://www.linkedin.com/in/barbara-stefani-d-b052b1140/">
+               acessar o meu linkedin</a></p>
+
+     <hr>
+
+     <!-- Use o caminho da outra pagina, para referenciar links em que voce sera
+         redirecionado para uma outra pagina do mesmo site. nesse caso, voce não 
+        deve usar o parametro target _blank  -->
+     <h2>Usando Links Internos!</h2>
+     <p>Esta é a primeira pagina do site, se voce quiser, pode acessar tambem a minha
+          <a href="pag002.html" rel="next">seguna pagina</a>
+     </p>
+
+     <p>Voce tambem pode acessaer minha <a href="noticias/pag003.html" rel="next">
+               Pagina de noticias </a>aqui</p>
+
+     <hr>
+
+     <!-- Use os parametros "download" e "type = application/pdf" (dependendo da 
+          extensão do arquivo) para realisar o download dos arquivos, pode variar conforme
+          o navegador usado (no edge apenas o parametro download é suficiente) -->
+     <h2>Links para Download!</h2>
+     <ul type="circle">
+          <li>
+               <p>Para fazer download de um arquivo PDF
+                    <a href="livros/TESTE.pdf" download="TESTE.pdf" type="application/pdf">
+                         clique aqui</a>
+               </p>
+
+          <li>
+               <p>Para fazer download de um arquivo ZIP
+                    <a href="livros/TESTE2.zip" download="TESTE2.zip" type="application/zip">
+                         clique aqui</a>
+               </p>
+     </ul>
+     <hr>
+     <!-- Link para a pagina inicial com todos os links -->
+     <a href="../../inicial/index.html" rel="prev">Pagina inicial! &#x1F90D</a>
+</body>
+
+</html>

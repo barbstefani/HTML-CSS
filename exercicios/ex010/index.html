@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicons/favicon6.ico" type="image/x-icon">
+    <title>Midias</title>
+    <style>
+        mark {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+
+    <p>Tente abrir esse site em varios dispositivos diferentes ou tente diminuir
+        a aba do seu navegador em varios tamanhos diferentes. (Esta nao é uma imagem responsiva)</p>
+
+        <!-- A tag picture permite que voce coloque tamanhos
+             altenativos de imagens em seu site  -->
+        <picture>
+            <!-- Tag source é responsavel por chamar os diferentes tamanhos de imagem. -->
+            <source media="(max-width: 750px)" srcset="imagens/imagemp.png" 
+             type="image/png">
+             <!-- Tenha cuidado com a ordem das imagens, sempre seguir do menor tamanho 
+                  para o maior tamanho -->
+            <source media="(max-width: 1000px)" srcset="imagens/imagemm.png" 
+             type="image/png">
+            <img src="imagens/imagemg.png" alt="imagem flexivel">
+        </picture>
+        <hr>
+        <h1>Reproduzindo audios!</h1>
+
+        <p>Aprendendo a colocar audios no site. Aqui temos duas formas. Não se esqueça de
+           disponibulizar formatos diferentes de arquivo para diferentes navegadores.
+        </p>
+        <!-- O parametro autoplay inicia a musica automaticamente ao entrar na pagina,
+             O parametro controls coloca botoes de reprodição no arquivo de audio.  -->
+        <audio src="../ex011/midia/exemploaudionaoabrir.mp3" controls></audio>
+        <!-- tipos compativies: mp3, wave ogg  -->
+
+
+        <audio preload="metadata" controls>
+            <source src="../ex011/midia/exemploaudionaoabrir.mp3" type="audio/mpeg">
+            <!-- <source src="midia/exemploaudionaoabrir.ogg" type="audio/ogg">
+            <source src="midia/exemploaudionaoabrir.wave" type="audio/wave"> -->
+        </audio>
+
+        <p>
+           Caso não seja possivel reproduzir o audio pelo seu navegador, voce pode baixa-lo clicando 
+           <a href="midia/exemploaudionaoabrir.mp3" download="audio/mpeg"><mark>aqui</mark></a>
+        </p>
+        <!-- Link para a pagina inicial com todos os links -->
+      <a href="../../inicial/index.html" rel="prev">Pagina inicial! &#x1F90D</a>
+</body>
+</html>

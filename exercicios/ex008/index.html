@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicons/favicon9.ico" type="image/x-icon">
+    <title>Listas</title>
+    <style>
+        mark {
+            background-color: lightpink;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+
+    <!-- Tag para listas ordenadas -->
+    <h2>Listas ordenadas</h2>
+
+    <p>Para fazer uma <mark>lista ordenada</mark> use a tag &lt;ol&gt;, dentro dessa tag, 
+       use a tag &lt;li&gt; para enumerar cada item da lista, ele ordenara automaticamente 
+       independente de que local da lista voce adicionar o item novo. A tag &lt;/li&gt;
+       para fechamento é opcional
+    </p>
+    <!-- Parametro type muda a formação da ordem da lista -->
+    <ol type="I"> 
+        <li>acordar</li>
+        <li>levantar da cama</li>
+        <li>ir no banheiro</li>
+        <li>tomar cafe</li>
+    </ol>
+    <hr>
+
+    <h2>Listas não ordenadas</h2>
+
+    <p>Para as <mark>listas não ordenadas</mark> apenas mude a tag &lt;ol&gt; para a tag &lt;ul&gt;</p>
+    
+    <ul type="circle" >
+        <li>acordar</li>
+        <li>levantar da cama</li>
+        <li>ir no banheiro</li>
+        <li>tomar cafe</li>
+    </ul>
+    <hr>
+
+    <h2>Juntando listas versão 1.0</h2>
+
+    <p>Lista ordenada com sub listas ordenadas</p>
+
+    <ol>
+        <li><mark>antigas</mark></li>
+        <ol type="a">
+            <li>blabla</li>
+            <li>blablabla</li>
+        </ol>
+        <li><mark>novas</mark></li>
+        <!-- O parametro start indica a posição de inicio da ordem da lista -->
+        <ol type="a" start="3">
+            <li>blablabla</li>
+            <li>blabla</li>
+        </ol>
+    </ol>
+    <hr>
+
+    <h2> Juntando listas versão 2.0 </h2>
+
+    <p>Lista não ordenada com sub listas ordenadas</p>
+
+    <ul type="circle">
+        <li><mark>Play 2</mark></li>
+        <ol type="i">
+            <li>Dynasty Warriors</li>
+            <li>Warrios the Orochi</li>
+            <li>Samurai Warriors</li>
+            <li>The sims 4 estações</li>
+        </ol>
+        <li><mark>Mobile</mark></li>
+        <ol type="i">
+            <li>Fate Grand Order</li>
+            <li>Lord of Heroes</li>
+            <li>Mystic Messenger</li>
+            <li>Brave Trials</li>
+            <li>Otogi Spirit Agentes</li>
+            <li>Ayakashi Romance Reborn</li>
+        </ol>
+        <li><mark>Notebook</mark></li>
+        <ol type="i">
+            <li>Honkai Star Rail</li>
+            <li>Genshin</li>
+            <li>Honkai</li>
+            <li>The Sims</li>
+        </ol>
+    </ul>
+    <hr>
+
+    <h2>Lista de Definições</h2>
+
+    <!-- dt = termo. dd = descrição. -->
+    <ol>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para o design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+    </ol>
+    <hr>
+    <!-- Link para a pagina inicial com todos os links -->
+    <a href="../../inicial/index.html" rel="prev">Pagina inicial! &#x1F90D</a>
+ 
+</body>
+</html>
